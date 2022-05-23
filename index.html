@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro component with sign up form</title>
-  <link rel="stylesheet" href="style.css" class="css">
+  <link rel="stylesheet" href="styles.css" class="css">
 </head>
 <body>
   <main>
@@ -19,16 +19,41 @@
         <p><b> Try it free 7 days</b> then $20/mo. thereafter</p>
       </div>
       <div class="form-container">
-        <form>
-          <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-          <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-          <input type="email" id="email" name="email" placeholder="Email Address"><br>
-          <input type="password" id="password" name="password" placeholder="Password"><br>
+        <form id="form">
+          <div class="input fname">
+            <div class="row-input">
+              <img src="images/icon-error.svg" alt="" class="error-icon error error-f-i">
+              <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            </div>
+            <p class="error-text error error-f">First name cannot be empty</p>
+          </div>
+          <div class="input lname">
+            <div class="row-input">
+              <img src="images/icon-error.svg" alt="" class="error-icon error error-l-i">
+              <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            </div>
+            <p class="error-text error error-l">Last name cannot be empty</p>
+          </div>
+          <div class="input email">
+            <div class="row-input">
+              <img src="images/icon-error.svg" alt="" class="error-icon error error-e-i">
+              <input type="email" id="email" name="email" placeholder="Email Address"><br>
+            </div>
+            <p class="error-text error error-e">Looks like this is not an Email</p>
+          </div>
+          <div class="input password">
+            <div class="row-input">
+              <img src="images/icon-error.svg" alt="" class="error-icon error error-p-i">
+              <input type="password" id="password" name="password" placeholder="Password"><br>
+            </div>
+            <p class="error-text error error-p">Password cannot be empty</p>
+          </div>
           <button id="submit" type="submit">Claim your free trial</button>
           <p>By clicking the button, you are agreeing to our <span id="terms-services">Terms and Services</span></p>
         </form>
       </div>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
