@@ -43,22 +43,22 @@ const submitCheck =  () => {
     lname = lastName.value;
     email = emailAddress.value;
     pass = password.value;
-    if(fname == '') {
+    if(fname === '') {
         firstName.classList.add("input-error");
         errorFirstNameIcon.style.visibility = 'visible';
         errorFirstNameMessage.style.visibility = 'visible';
     }
-    if(lname == '') {
+    if(lname === '') {
         lastName.classList.add("input-error");
         errorLastNameIcon.style.visibility = 'visible';
         errorLastNameMessage.style.visibility = 'visible';
     }
-    if(pass == '') {
+    if(pass === '') {
         password.classList.add("input-error");
         errorPasswordIcon.style.visibility = 'visible';
         errorPasswordMessage.style.visibility = 'visible';
     }
-    if(!ValidateEmail(email) || email == ''){
+    if(!ValidateEmail(email) || email === ''){
         emailAddress.classList.add("input-error");
         errorEmailIcon.style.visibility = 'visible';
         errorEmailMessage.style.visibility = 'visible';
