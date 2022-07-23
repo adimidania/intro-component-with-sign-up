@@ -161,6 +161,11 @@ input:focus {
     letter-spacing: 0.6px;
     -webkit-box-shadow: 0px 6px 4px 0px rgba(63,63,63,0.45); 
     box-shadow: 0px 6px 4px 0px rgba(63,63,63,0.45);
+    transition: 0.3s;
+}
+
+#submit:hover {
+    background-color: hsla(154, 59%, 51%, 0.738);
 }
 
 form p {
@@ -247,4 +252,8 @@ form p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.free-trail-offer, input, button {
+    cursor: pointer;
 }
